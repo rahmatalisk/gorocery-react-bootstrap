@@ -38,3 +38,8 @@ margin-right:  0.2rem;
 .footer-box div:hover i{
     margin-right: 1.5rem;
 }
+@media only screen and (max-width: 600px) {
+    .footer-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

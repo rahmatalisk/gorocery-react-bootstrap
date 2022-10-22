@@ -8,7 +8,7 @@ import './Categories.css'
 
 const Categories = () => {
     return (
-        <section>
+        <section id='catagories'>
         <div className='container'>
             <div className='features py-5'>
                 <h2 className='heading'>Product<span>Categories</span></h2>

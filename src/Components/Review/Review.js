@@ -11,7 +11,7 @@ import { Navigation } from "swiper";
 
 const Review = () => {
     return (
-        <section>
+        <section id='review'>
             <div className="container">
                 <div className='features '>
                     <h2 className='heading mb-5'>Customer's<span>Review</span></h2>
@@ -19,9 +19,23 @@ const Review = () => {
                 <div className="review-container  pb-5">
                     <Swiper
                         rewind={true}
-                        slidesPerView={3}
+                        slidesPerView={1}
+                        spaceBetween={10}
+                        pagination={{
+                          clickable: true,
+                        }}
+                        breakpoints={{
+                          640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                          },
+                          768: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                          }
+                        }}
                         modules={[Navigation]}
-                        className="mySwiper"
+                        className="mySwiper" 
 
                     >
                         <SwiperSlide>

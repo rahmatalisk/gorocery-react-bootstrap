@@ -14,17 +14,30 @@ import { Navigation } from "swiper";
 
 const Products = () => {
     return (
-        <section>
+        <section id='product'>
             <div className='container '>
                 <div className='features py-5'>
                     <h2 className='heading mb-5'>Our <span>Products</span></h2>
                     <div className="product-container  ">
                         <Swiper
-                        rewind={true}
-                        slidesPerView={3}
-                        modules={[Navigation]}
-                        className="mySwiper" 
-                        
+                            rewind={true}
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                }
+                            }}
+                            modules={[Navigation]}
+                            className="mySwiper"
                         >
                             <SwiperSlide>
                                 <div className="box">
@@ -138,18 +151,32 @@ const Products = () => {
                                     <button className='button'>Add To Cart</button>
                                 </div>
                             </SwiperSlide>
-                            
+
                         </Swiper>
 
-                        
+
                     </div>
                     <div className="product-container  mt-5">
                         <Swiper
-                        rewind={true}
-                        slidesPerView={3}
-                        modules={[Navigation]}
-                        className="mySwiper" 
-                        
+                            rewind={true}
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                }
+                            }}
+                            modules={[Navigation]}
+                            className="mySwiper"
+
                         >
                             <SwiperSlide>
                                 <div className="box">
@@ -263,10 +290,10 @@ const Products = () => {
                                     <button className='button'>Add To Cart</button>
                                 </div>
                             </SwiperSlide>
-                            
+
                         </Swiper>
 
-                        
+
                     </div>
                 </div>
             </div>

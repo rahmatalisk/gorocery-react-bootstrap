@@ -7,7 +7,7 @@ import './Blogs.css'
 
 const Blogs = () => {
     return (
-        <section>
+        <section id='blogs'>
             <div className='container'>
                 <div className='features py-5'>
                     <h2 className='heading'>Our<span>Blogs</span></h2>

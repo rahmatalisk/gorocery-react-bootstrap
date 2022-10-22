@@ -6,7 +6,7 @@ import featureimg3 from '../../image/feature-img-3.png'
 
 const Features = () => {
     return (
-        <section>
+        <section id='feature'>
             <div className='container'>
                 <div className='features py-5'>
                     <h2 className='heading'>Our <span>Features</span></h2>
